@@ -16,7 +16,7 @@ Foi utilizado o plugin maven-assembly para atingir esse objetivo
     --- Iniciando SSO para grupo: Grupo São Paulo ---
     - EPI do módulo: Capacete
 4. Execute o assembly do projeto sso-cliente: `mvn clean package assembly:single`
-5. Execute o método main do jar gerado: `java -cp target/sso-cliente-1.0-SNAPSHOT-jar-extendido.jar br.com.glr.populis.SSOMain`
+5. Execute o método main do jar gerado: `java -cp target/sso.jar br.com.glr.populis.SSOMain`
 6. a saída será algo como:
     --- Iniciando SSO para grupo: Grupo São Paulo ---
     - EPI do módulo: Capacete Espacial
