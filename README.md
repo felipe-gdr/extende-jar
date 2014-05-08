@@ -3,18 +3,21 @@ extende-jar
 
 Extensão de JAR
 
+
 Prova de Conceito: criar um procedimento de montagem de JAR no Maven aonde um determinado projeto sobrescreve arquivos presentes em uma de suas dependências.
+
 
 Foi utilizado o plugin maven-assembly para atingir esse objetivo
 
-1- Instale o projeto sso-padrao: mvn install
-2- Execute o método main do jar gerado: java -cp target/sso-padrao-1.0-SNAPSHOT.jar br.com.glr.populis.SSOMain
-3- a saída será algo como:
+
+1. Instale o projeto sso-padrao: mvn install
+2. Execute o método main do jar gerado: java -cp target/sso-padrao-1.0-SNAPSHOT.jar br.com.glr.populis.SSOMain
+3. a saída será algo como:
     --- Iniciando SSO para grupo: Grupo São Paulo ---
     - EPI do módulo: Capacete
-4- Execute o assembly do projeto sso-cliente: mvn clean package assembly:single
-5- Execute o método main do jar gerado:java -cp target/sso-cliente-1.0-SNAPSHOT-jar-extendido.jar br.com.glr.populis.SSOMain
-6- a saída será algo como:
+4. Execute o assembly do projeto sso-cliente: mvn clean package assembly:single
+5. Execute o método main do jar gerado:java -cp target/sso-cliente-1.0-SNAPSHOT-jar-extendido.jar br.com.glr.populis.SSOMain
+6. a saída será algo como:
     --- Iniciando SSO para grupo: Grupo São Paulo ---
     - EPI do módulo: Capacete Espacial
 
