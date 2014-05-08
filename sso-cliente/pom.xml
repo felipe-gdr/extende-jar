@@ -49,6 +49,8 @@
 					<descriptors>
 						<descriptor>src/assembly.xml</descriptor>
 					</descriptors>
+					<finalName>sso</finalName>
+					<appendAssemblyId>false</appendAssemblyId>
 				</configuration>
 			</plugin>
 		</plugins>
